@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:hint="value1"
+            android:layout_weight="50"
+            android:id="@+id/tvVal1"
+            android:layout_gravity="center"></TextView>
+        <EditText
+            android:layout_width="4in"
+            android:layout_height="wrap_content"
+            android:id="@+id/etVal1"
+            android:layout_weight="50"
+            android:layout_gravity="center"
+            android:shadowColor="@color/cardview_dark_background"
+            ></EditText>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100"
+
+        >
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:hint="value2"
+            android:id="@+id/tvVal2"
+            android:layout_weight="50"
+            android:layout_gravity="center"></TextView>
+        <EditText
+            android:layout_width="4in"
+            android:layout_height="wrap_content"
+            android:id="@+id/etVal2"
+            android:layout_weight="50"
+            android:layout_gravity="center"
+            android:shadowColor="@color/cardview_dark_background"
+
+            ></EditText>
+
+    </LinearLayout>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="350dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/sp1"
+        ></Spinner>
+    <TextView
+        android:layout_width="2.1in"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Result"
+        android:id="@+id/result"></TextView>
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:hint="Calculate"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="150dp"
+        android:id="@+id/btnCalculate"
+        ></Button>
+
+</LinearLayout>
